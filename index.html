@@ -4,37 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Ochieng | Cloud Solutions Architect & DevOps Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/global.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/pre-header.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/header.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/homepage-hero.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/homepage-main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/footer.css">
+
+
     <!-- Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <section class="top-bar">
+        <div class="pre-header">
+            <div class="contact-info">
+                Contact us: <a href="mailto: ochiengc753@gmail.com">ochiengc753@gmail.com</a> | <a href="tel: +254 746 315094">+254 746 315094</a>
+            </div>
+            <div class="social-links">
+                <a href="https://x.com/CharlesO21441" target="_blank" class="social-icon"><i class="fab fa-x"></i></a>
+                <a href="https://www.linkedin.com/in/charles-ochieng-177ba3253" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/charlesochieng878/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/ChuckyCharles" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/charlesochieng" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
     <header>
         <nav>
-            <div class="hamburger-menu" id="hamburger-menu">
-                <i class="fas fa-bars"></i>
+            <div class="nav-items">
+                <h1 id="brand-name"></h1>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="nav-links" class="nav-links">
+                    <li>
+                        <a href="./index.html#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="./public/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li id="get-in-touch">
+                        <a href="https://wa.me/254746315094?text=Hello, I'm%20interested%20in%20your%20automations%20services%20I%20would%20love%20know%20more%20about%20them" target="_blank">Get In Touch</a>
+                    </li>
+                </ul>
             </div>
-            <ul id="nav-links" class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
-        <div class="header-content">
-            <h1>Charles Ochieng</h1>
-            <h2>Cloud Solutions Architect & DevOps Engineer</h2>
-            <p>Designing and implementing cloud infrastructure solutions with a passion for automation.</p>
-            <a href="#contact" class="cta">Contact Me</a>
-        </div>
     </header>
-
+    <section class="hero" id="background">
+        <div class="hero-content">
+            <div class="hero-content-wrapper">
+                <h2>Cloud Solutions Architect & DevOps Engineer</h2>
+                <h4>
+                    Hi. I’m Charles, and I do Designing and implementation of cloud infrastructure solutions with a passion for  automations and creation of automation tools.
+                </h4>
+                <a href="#contact" class="cta">Contact Me</a>
+            </div>
+        </div>
+    </section>
     <section id="about" class="about-section">
-        <h2>About Me</h2>
+        <div class="about-section-header">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
         <div class="about-container">
-            <div class="about-picture">
-                <img src="bk.png" alt="Charles Ochieng" class="profile-picture">
+            <div class="profile-container">
+                <img src="./assets/images/charles_ochieng_profile.png" alt="Charles Odhiambo" class="profile-image">
             </div>
             <div class="about-text">
                 <p>I am a Cloud Solutions Architect and part-time DevOps engineer with extensive experience in AWS, Azure, and Google Cloud. I specialize in containerization, orchestration, and creating efficient, scalable cloud infrastructures.</p>
@@ -44,55 +87,244 @@
     </section>
 
     <section id="portfolio" class="portfolio-section">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <h3>Project 1: Serverless Image Processing</h3>
-            <p>Implemented a serverless image processing solution using AWS Lambda, S3, and Docker.</p>
+        <div class="portfolio-section-header">
+            <h2>Portfolio</h2>
+            <div class="underline"></div>
         </div>
-        <div class="portfolio-item">
-            <h3>Project 2: Multi-Cloud Monitoring App</h3>
-            <p>Developed a multi-cloud monitoring application for real-time infrastructure tracking and management.</p>
+        <div class="portfolio-item-content">
+            <div class="portfolio-item">
+                <h3>Project 1: Serverless Image Processing</h3>
+                    <div class="underline"></div>
+                <div class="portfolio-item-image">
+                    <img src="./assets/images/serverless-image-processing.jpeg"/>
+                </div>
+                <div class="portfolio-item-text">
+                    <div class="tick-icon">
+                        <img src="./assets/icons/tick icon.png" alt="tick Icon"/>
+                        <p>Implemented a serverless image processing solution using AWS Lambda, S3, and Docker.</p>
+                    </div>
+                    <div>
+                        <a href="https://github.com/ChuckyCharles/Serveless_Image-processor_AWS-Docker" class="cta">Project Link</a>
+                        <a href="./public/learn-more.html#serverless-image-processing" class="cta">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 2: Multi-Cloud Monitoring App</h3>
+                    <div class="underline"></div>
+                <div class="portfolio-item-image">
+                    <img src="./assets/images/multicloud-monitoring-app.jpeg"/>
+                </div>
+                <div class="portfolio-item-text">
+                    <div class="tick-icon">
+                        <img src="./assets/icons/tick icon.png" alt="tick Icon"/>
+                        <p>Developed a multi-cloud monitoring application for real-time infrastructure tracking and management.</p>
+                    </div>
+                    <div>
+                        <a href="https://github.com/ChuckyCharles/Post-Automation-in-AWS" class="cta">Project Link</a>
+                        <a href="./public/learn-more.html#multicloud-monitoring-app" class="cta">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Add more projects as needed -->
     </section>
 
     <section id="services" class="services-section">
-        <h2>Services</h2>
-        <ul>
-            <li>Cloud Solutions Architecture</li>
-            <li>DevOps Consulting</li>
-            <li>Infrastructure Automation</li>
-        </ul>
+        <div class="services-section-content">
+            <h2>Services</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-content">
+            <div class="services-content-text">
+                <h3>1. Cloud Solutions Architecture</h3>
+                <div class="underline"></div>
+                <p>As a Cloud Solutions Architect with expertise in AWS, Azure, and Google Cloud, I design scalable, secure, and cost-efficient cloud environments that align with business objectives. My focus areas include:</p>
+                <ol>
+                    <li>Cloud Infrastructure Design</li>
+                    <p>I build high-performance architectures using compute, storage, and networking services like EC2, Azure VMs, and Google Cloud Storage to ensure reliability and scalability.</p>
+                    
+                    <li>Automation & Orchestration</li>
+                    <p>Leveraging Infrastructure as Code (Terraform, CloudFormation) and container orchestration (Kubernetes), I automate and streamline cloud operations for efficiency and agility.</p>
+                    
+                    <li>Scalability & Availability</li>
+                    <p>I implement dynamic scaling and high availability strategies with multi-region deployments and load balancing, ensuring uptime and resilience.</p>
+                    
+                    <li>Cost Optimization</li>
+                    <p>By monitoring resource usage and leveraging tools like AWS Cost Explorer, I ensure optimized spending while maintaining performance.</p>
+                    
+                    <li>Security & Compliance</li>
+                    <p>I integrate security best practices, including IAM, encryption, and compliance with industry regulations, using services like AWS Shield and Azure Security Center.</p>
+                    
+                    <li>Cloud Migration</li>
+                    <p>I lead seamless cloud migrations, rearchitecting systems or using lift-and-shift approaches to minimize disruptions and enhance scalability.</p>
+                </ol>
+                <li id="whatsapp">
+                    <a href="https://wa.me/254746315094?text=Hello, I'm%20interested%20in%20your%20cloud%20solutions%20architecture%20services%20I%20would%20love%20know%20more%20about%20them" target="_blank">Contact</a>
+                </li>
+            </div>
+            <div class="services-content-text">
+                <h3>2. DevOps Consulting</h3>
+                <div class="underline"></div>
+                <p>As a DevOps Consultant, I specialize in optimizing and automating software development lifecycles, enabling organizations to achieve faster, more reliable deployments. My expertise covers:</p>
+
+                    <ol>
+                    <li>CI/CD Pipeline Automation</li>
+                    <p>I design and implement Continuous Integration and Continuous Deployment (CI/CD) pipelines using tools like Jenkins, GitLab CI, and Azure DevOps to automate code testing, building, and deployment for seamless software delivery.</p>
+                    
+                    <li>Infrastructure as Code (IaC)</li>
+                    <p>Leveraging tools like Terraform, Ansible, and CloudFormation, I automate infrastructure provisioning and management, ensuring consistency and reducing manual overhead.</p>
+                    
+                    <li>Containerization & Orchestration</li>
+                    <p>I streamline application deployment with containerization technologies like Docker and Kubernetes, enabling efficient scaling and improved resource utilization.</p>
+                    
+                    <li>Monitoring & Incident Management</li>
+                    <p>I implement real-time monitoring and alerting systems using Prometheus, Grafana, and ELK Stack, ensuring quick issue detection and resolution for minimal downtime.</p>
+                    
+                    <li>Cloud Optimization</li>
+                    <p>By integrating DevOps practices with AWS, Azure, and Google Cloud, I enhance cloud performance, security, and cost-efficiency, supporting scalable and flexible infrastructures.</p>
+                    
+                    <li>Collaboration & Process Automation</li>
+                    <p>I foster collaboration between development and operations teams, automating workflows and improving processes to reduce time-to-market and increase reliability.</p>
+                    </ol> 
+                <li id="whatsapp">
+                    <a href="https://wa.me/254746315094?text=Hello, I'm%20interested%20in%20your%20DevOps%20Consulting%20services%20I%20would%20love%20know%20more%20about%20them" target="_blank">Contact</a>
+                </li>
+            </div>
+            <div class="services-content-text">
+                <h3>3. Infrastructure Automation</h3>
+                <div class="underline"></div>
+                <p>As an expert in Infrastructure Automation, I help organizations streamline their cloud operations and increase efficiency by automating infrastructure provisioning and management. Key areas of focus include:</p>
+                <ol>
+                    <li>Infrastructure as Code (IaC)</li>
+                    <p>I automate cloud infrastructure using tools like Terraform, CloudFormation, and Ansible, ensuring consistency and reducing manual intervention.</p>
+                    
+                    <li>CI/CD Pipeline Integration</li>
+                    <p>I integrate IaC into CI/CD pipelines, enabling automated deployment and infrastructure updates in sync with application releases.</p>
+                    
+                    <li>Containerization & Orchestration</li>
+                    <p>Leveraging Docker and Kubernetes, I automate application deployment and scaling, enhancing operational efficiency and resource utilization.</p>
+                    
+                    <li>Cloud Optimization</li>
+                    <p>I implement automated resource scaling and cost optimization strategies across AWS, Azure, and Google Cloud, improving performance and reducing costs.</p>
+                </ol>
+                <li id="whatsapp">
+                    <a href="https://wa.me/254746315094?text=Hello, I'm%20interested%20in%20your%20Infrastructure%20Automation%20services%20I%20would%20love%20know%20more%20about%20them" target="_blank">Contact</a>
+                </li>
+            </div>
+        </div>
     </section>
 
     <section id="testimonials" class="testimonials-section">
-        <h2>Testimonials</h2>
-        <p>"Charles is a cloud wizard! His solutions are always efficient and scalable." - Richard Odhiambo</p>
-        <p>"Working with Charles on our DevOps pipeline was a game-changer." - Derrick Ochieng</p>
+        <div class="testimonials-section-header">
+            <h2>Testimonials</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="testimonials-content">
+            <div class="testimonials-profile">
+                <div class="testimonials-profile-image">
+                    <img src="./assets/images/richard odhiambo profile.jpg" alt="Richard Odhiambo">
+                </div>
+                <div class="testimonials-text-content">
+                    <p>Richard Odhiambo</p>
+                    <p>"Charles is a cloud wizard! His solutions are always efficient and scalable."</p>
+                    <a href="mailto: odhiambo4r@gmail.com">Email: odhiambo4r@gmail.com</a>
+                    <a href="tel: 0710378992"><span>Phone: 0710378992</span></a>
+                </div>
+            </div>
+            <div class="testimonials-profile">
+                <div class="testimonials-profile-image">
+                    <img src="./assets/images/Rosebella Wairiara.jpeg" alt="Rosebella Wariara">
+                </div>
+                <div class="testimonials-text-content">
+                    <p>Rosebella Wariara</p>
+                    <p>
+                       "Working with Charles on our DevOps pipeline was a game-changer." 
+                    </p>
+                    <a href="mailto: odhiambo4r@gmail.com">Email: Wariararosebell04@gmail.com</a>
+                    <a href="tel: 0710378992"><span>Phone:0718831656</span></a>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <footer id="contact" class="footer-section">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me through the following platforms:</p>
-        <ul>
-            <li>Email: <a href="mailto:charles@example.com">ochiengcharles531@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/charles-ochieng-177ba3253" target="_blank">linkedin.com/in/charlesochieng</a></li>
-            <li>GitHub: <a href="https://github.com/ChuckyCharles" target="_blank">github.com/chuck42chuck</a></li>
-        </ul>
-        <div class="social-media">
-            <a href="https://x.com/CharlesO21441" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/charles-ochieng-177ba3253" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/charlesochieng878/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/ChuckyCharles" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com/charlesochieng" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <footer>
+        <div class="footer-content-wrap">
+            <div class="brands">
+                <div class="brand-logo-name">
+                    <div class="brand-logo">
+                        <h3>Charles Ochieng</h3>
+                    </div> 
+                </div>
+                <div class="brands-paragraph-content">
+                    <p>Hi. I’m Charles, and I do Designing and implementation of cloud infrastructure solutions with a passion for automations and creation of automation tools.</p>
+                </div> 
+                <div class="social-media-brand-logos">
+                    <div>
+                        <a href="https://x.com/CharlesO21441" target="_blank" class="social-icon"><i class="fab fa-x"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/charles-ochieng-177ba3253" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/charlesochieng878/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/ChuckyCharles" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/charlesochieng" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <div class="underline"></div>
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="./public/about.html">About</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="contact" class="contact">
+                <h3>Contact</h3>
+                <div class="underline"></div>
+                <p>Feel free to reach out to me through the following platforms:</p>
+                <div class="contact-information-icons-details">
+                    <div class="phone-details">
+                        <div class="icon-container">
+                            <img src="./assets/icons/phone-white-icon.png" />
+                        </div>
+                        <div class="phone-link">
+                            <a href="tel: +254 746 315094">+254 746 315094</a>
+                        </div>
+                    </div>
+                    <div class="email-details">
+                        <div class="icon-container">
+                            <img src="./assets/icons/email-white-icon.png" />
+                        </div>
+                        <div class="email-link">
+                            <a href="mailto: ochiengc753@gmail.com">ochiengc753@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-tag">
+            <p>Copyright &copy; <span id="year">
+            </span> | Charles Ochieng | Maintained by <span>
+                <a href="https://github.com/ChuckyCharles" target="_blank">Charles Ochieng</a>
+            </span>
+            </p>
+        </div>
+        <div class="floating-wa-icon">
+            <div class="wa-icon">
+                <a href="https://wa.me/254746315094?text=Hello, I'm%20interested%20in%20your%20automations%20services%20I%20would%20love%20know%20more%20about%20them" target="_blank">
+                    <img id="wa-icon" src="./assets/icons/Whatsapp icon.png" alt="whatsapp"/>
+                </a>
+            </div>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('hamburger-menu').addEventListener('click', function() {
-            var navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <script src="./assets/scripts/index.js"></script>
+    <script type="text/javascript" src="./assets/scripts/current-year.js"></script>
 </body>
 </html>
