@@ -44,6 +44,10 @@ p{
     h1{
         font-size: 2rem;
     }
+
+    .underline {
+        display: none;
+    }
 }
 
 @media(max-width: 425px) {
