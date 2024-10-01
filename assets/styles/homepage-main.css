@@ -17,8 +17,8 @@
 
 .about-text {
     color: white;
-    background: hsl(210, 100%, 25%); /* Match the footer color with the header */
-    box-shadow: 1px 1px 4px rgb(210, 210, 210);
+    background-color: rgba(0, 0, 0, 0.5); /* Match the footer color with the header */
+    box-shadow: 10px 10px 10px rgb(230, 230, 230);
 }
 
 .about-section-header {

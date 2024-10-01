@@ -5,7 +5,7 @@
 
 .pre-header {
     position: fixed;
-    color: black;
+    color: white;
     top: 0;
     width: 100vw;
     max-width: 1440px;
@@ -17,11 +17,11 @@
 
 .contact-info a {
     text-decoration: none;
-    color: black;
+    color: green;
 }
 
 .contact-info a:hover {
-    color: #ff9900;
+    color: blue;
 }
 
 .social-links {

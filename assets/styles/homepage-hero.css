@@ -1,12 +1,12 @@
 #background {
-    background-image: url('../images/home\ page\ hero\ banner.jpeg');
+    background-image: url('../images/cloud\ image\ with\ data\ packets\ hero\ banner.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hero {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 80vh;
     max-width: 1440px;
 }
 
@@ -17,15 +17,21 @@
 }
 
 .hero-content-wrapper {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 60% opacity */
+    padding: 20px;
+    color: white;
     margin-top: 10rem;
     min-height: 50vh;
     width: 70vw;
-    background: #004080; /* Match the footer color with the header */
+    /* Match the footer color with the header */
+    /* background: #004080; */
+    opacity: 1;
+    box-shadow: 10px 10px 10px rgb(230, 230, 230);
 }
 
 .hero-content-wrapper:hover {
-    transform: scale(1.1);
-    background: #ff9900;
+    transform: scale(1);
+    background: green;
 }
 
 .hero-content {
@@ -58,6 +64,8 @@
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    position: relative;
+    left: 30vw;
 }
 
 .hero-content .cta:hover{
@@ -67,8 +75,7 @@
 @media(max-width: 320px) {
     .hero-content-wrapper {
         min-height: 70vh;
-        width: 60vw;
-        background: #004080; /* Match the footer color with the header */
+        width: 90vw;
     }
 
     .hero-content {
@@ -78,4 +85,46 @@
         display: grid;
         justify-content: center;
     }
+
+    .hero-content .cta {
+        left: 9.5vw;
+    } 
+}
+
+@media(max-width: 768px) {
+    .hero-content-wrapper {
+        min-height: 70vh;
+        width: 100vw;
+    }
+
+    .hero-content {
+        width: 70vw;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .hero-content .cta {
+        left: 35vw;
+    } 
+}
+
+@media(max-width: 425px) {
+    .hero-content-wrapper {
+        min-height: 70vh;
+        width: 90vw;
+    }
+
+    .hero-content {
+        width: 70vw;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .hero-content .cta {
+        left: 25vw;
+    } 
 }
