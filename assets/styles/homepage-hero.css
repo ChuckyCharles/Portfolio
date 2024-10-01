@@ -94,7 +94,7 @@
 @media(max-width: 768px) {
     .hero-content-wrapper {
         min-height: 70vh;
-        width: 100vw;
+        width: 90vw;
     }
 
     .hero-content {
@@ -106,7 +106,7 @@
     }
 
     .hero-content .cta {
-        left: 35vw;
+        display: none;
     } 
 }
 
