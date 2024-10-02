@@ -60,6 +60,18 @@
     font-weight: bold;
 }
 
+.hero-content .cta {
+    position: relative;
+    left: 25vw;
+}
+
 .hero-content .cta:hover{
     background: #004080; /* Match the footer color with the header */
+}
+
+@media (max-width: 768px) {
+    .hero-content .cta {
+        left: 20vw;
+        bottom: 2px;
+    }
 }

@@ -3,6 +3,7 @@
     grid-template-columns: repeat(2, auto);
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -52,7 +53,11 @@
     }
 
     .about-picture, .about-text {
-        padding: 1rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .about-text {
+       width: 80vw;
     }
 
     .profile-image {
@@ -62,6 +67,14 @@
 
     .profile-picture {
         margin-bottom: 20px;
+    }
+
+    .footer-content-wrap{
+        width: 70vw;
+    }
+
+    .copyright-tag{
+        overflow-x: hidden;
     }
 }
 
